@@ -15,19 +15,21 @@ const en24 = veinticuartrocuotas/24
 
 
 function calculadoraPrestamo() {
-    if (cuotas === 6) {
-        alert("Pagarias 6 cuotas de $" + en6 + " sumando un total: $" + seiscuotas )
-    }
-    else if (cuotas === 12){
-        alert("Pagarias 12 cuotas de $" + en12 + " sumando un total: $" + docecuotas)
-    }
-    else if (cuotas === 18){
-        alert("Pagarias 18 cuotas de $" + en18 + " sumando un total: $" + dieciochocuotas)
-    }
-    else if (cuotas === 24){
-        alert("Pagarias 24 cuotas de $" + en24 + " sumando un total: $" + veinticuartrocuotas)
-    }
-    else if (cuotas !=6 && cuotas !=12 && cuotas != 18 && cuotas !=24){
+        switch (cuotas){
+            case 6:
+                alert("Pagarias 6 cuotas de $" + en6 + " sumando un total: $" + seiscuotas )
+                break;
+            case 12:
+                alert("Pagarias 6 cuotas de $" + en12 + " sumando un total: $" + docecuotas )
+                break;
+            case 18:
+                alert("Pagarias 6 cuotas de $" + en18 + " sumando un total: $" + dieciochocuotas )
+                break;
+            case 24:
+                alert("Pagarias 6 cuotas de $" + en24 + " sumando un total: $" + veinticuartrocuotas )
+                break;
+        }
+    if (cuotas !=6 && cuotas !=12 && cuotas != 18 && cuotas !=24){
         alert("Las cuotas disponibles que tenemos disponibles son en 6, 12, 18 o 24")
         alert("Recarga la pagina para volver a empezar.")
     }
